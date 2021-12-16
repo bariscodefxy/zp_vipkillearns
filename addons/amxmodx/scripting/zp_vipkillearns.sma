@@ -5,7 +5,7 @@
 
 #define PLUGIN_NAME "ZP: Vip Kill Earns"
 #define PLUGIN_AUTHOR "bariscodefx"
-#define PLUGIN_VERSION "1.0"
+#define PLUGIN_VERSION "1.0.1"
 
 #define PERMISSION_LEVEL "r"
 #define FRAG_COUNT 3
