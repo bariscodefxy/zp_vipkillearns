@@ -23,7 +23,7 @@ public onKill() {
 		if(!has_flag(attacker, PERMISSION_LEVEL)) return false;
 		new ammopacks = zp_get_user_ammo_packs(attacker)
 		zp_set_user_ammo_packs(attacker, ammopacks + FRAG_COUNT)
-		client_print(attacker, "print_chat", "You got " + FRAG_COUNT + " frag for vip extras.")
+		client_print(attacker, print_chat, "You got +%s frag for vip extras.", FRAG_COUNT)
 	}
 
 	return false;
