@@ -5,7 +5,7 @@
 
 #define PLUGIN_NAME "ZP: Vip Kill Earns"
 #define PLUGIN_AUTHOR "bariscodefx"
-#define PLUGIN_VERSION "1.0.2"
+#define PLUGIN_VERSION "1.0.3"
 
 #define PERMISSION_LEVEL "r"
 #define FRAG_COUNT 3
@@ -23,7 +23,7 @@ public onKill() {
 		if(!has_flag(attacker, PERMISSION_LEVEL)) return false;
 		new ammopacks = zp_get_user_ammo_packs(attacker)
 		zp_set_user_ammo_packs(attacker, ammopacks + FRAG_COUNT)
-		client_print(attacker, print_chat, "You got +%s frag for vip extras.", FRAG_COUNT)
+		client_print(attacker, print_chat, "You got +%i frag for vip extras.", FRAG_COUNT)
 	}
 
 	return false;
