@@ -5,19 +5,18 @@
 
 #define PLUGIN_NAME "ZP: Vip Kill Earns"
 #define PLUGIN_AUTHOR "bariscodefx"
-#define PLUGIN_VERSION "1.0.1"
+#define PLUGIN_VERSION "1.0.2"
 
 #define PERMISSION_LEVEL "r"
 #define FRAG_COUNT 3
 
 public plugin_init() {
 	register_plugin(PLUGIN_NAME, PLUGIN_VERSION, PLUGIN_AUTHOR)
-	register_event("DeathMsg", "onKill", "a")
+	register_event("DeathMsg", "onKill", "a", "1>0")
 }
 
-public onKill(Killer, Victim) {
+public onKill() {
 	new attacker = read_data(1)
-	new victim = read_data(2)
 
 	if( !zp_get_user_zombie(attacker) )
 	{
