@@ -12,7 +12,7 @@
 
 public plugin_init() {
 	register_plugin(PLUGIN_NAME, PLUGIN_VERSION, PLUGIN_AUTHOR)
-	register_event("DeathMsg", "onKill", "bf")
+	register_event("DeathMsg", "onKill", "a")
 }
 
 public onKill(Killer, Victim) {
@@ -24,6 +24,7 @@ public onKill(Killer, Victim) {
 		if(!has_flag(attacker, PERMISSION_LEVEL)) return false;
 		new ammopacks = zp_get_user_ammo_packs(attacker)
 		zp_set_user_ammo_packs(attacker, ammopacks + FRAG_COUNT)
+		client_print(attacker, "print_chat", "You got " + FRAG_COUNT + " frag for vip extras.")
 	}
 
 	return false;
