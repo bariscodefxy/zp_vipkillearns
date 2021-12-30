@@ -1,3 +1,4 @@
+// -*- PHP -*-
 #include <amxmodx>
 #include <amxmisc>
 #include <amxconst>
