@@ -4,8 +4,6 @@
   Zombie Plague getting extra ammo packs for VIPs on kill each a zombie.
 </p>
 
-[![Discord](https://img.shields.io/discord/812096967714930710?label=Discord)](https://discord.gg/DjzkhrF7sZ)
-
 | Name | Author | Version |
 | ---- | ------ | ------- |
 | ZP: Vip Kill Earns | bariscodefx | 0.1.3 |
